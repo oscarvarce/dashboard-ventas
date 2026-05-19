@@ -2,7 +2,7 @@
 Dashboard de Análisis de Ventas - Streamlit App
 ================================================
 Aplicación interactiva para análisis de datos de ventas.
-Autor: [Tu Nombre]
+Autor: Oscar Vargas Arce
 Fecha: 2026-05-19
 """
 

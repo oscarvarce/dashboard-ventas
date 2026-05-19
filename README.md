@@ -12,7 +12,7 @@
 
 ## 🚀 Demo en vivo
 
-🔗 **[Ver aplicación desplegada en Streamlit Cloud](https://tu-app.streamlit.app)** *(reemplaza con tu URL)*
+🔗 **[Ver aplicación desplegada en Streamlit Cloud](https://dashboard-ventas-oscarvarce.streamlit.app/)**
 
 ---
 
@@ -60,7 +60,7 @@
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/dashboard-ventas.git
+git clone https://github.com/oscarvarce/dashboard-ventas.git
 cd dashboard-ventas
 ```
 
@@ -129,11 +129,10 @@ Si deseas usar tu propio archivo, asegúrate de que contenga al menos estas colu
 
 ## 🧑‍💻 Autor
 
-**[Tu Nombre]** - *Data Analyst / Python Developer*
+**Oscar Vargas Arce** - *Data Analyst / Python Developer*
 
-- 🐦 Twitter: [@tu_usuario](https://twitter.com/tu_usuario)
-- 💼 LinkedIn: [linkedin.com/in/tu-usuario](https://linkedin.com/in/tu-usuario)
-- 📧 Email: tu.email@ejemplo.com
+- 💼 LinkedIn: [linkedin.com/in/tu-usuario](https://www.linkedin.com/in/ovarce/)
+- 📧 Email: o.vargas.arce@gmail.com
 
 ---
 

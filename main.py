@@ -32,6 +32,16 @@ st.set_page_config(
 
 
 # ------------------------------------------------------------------
+# SECCIÓN 2.5: PALETA DE COLORES PERSONALIZADA
+# ------------------------------------------------------------------
+# Centralizamos los colores para facilitar cambios y mantener
+# consistencia visual en todo el dashboard.
+COLOR_PRIMARIO = "#6366f1"      # Indigo vibrante (líneas, acentos)
+COLOR_SECUNDARIO = "#10b981"    # Esmeralda (barras, éxitos)
+COLOR_ACENTO = "#f59e0b"        # Ámbar (alertas, destacados)
+COLOR_GRISES = "#64748b"        # Slate (textos secundarios)
+
+# ------------------------------------------------------------------
 # SECCIÓN 3: FUNCIONES AUXILIARES (Helpers)
 # ------------------------------------------------------------------
 
@@ -330,7 +340,7 @@ if df is not None:
                 labels={"Total_Venta": "Ventas ($)", "Fecha": "Mes"},
                 template="plotly_white"
             )
-            fig_line.update_traces(line_color="#1f77b4", marker_size=8)
+            fig_line.update_traces(line_color=COLOR_PRIMARIO, marker_size=8)
             fig_line.update_layout(hovermode="x unified")
             st.plotly_chart(fig_line, use_container_width=True)
         else:
@@ -349,7 +359,7 @@ if df is not None:
                 title="Distribución % por Región",
                 hole=0.4,
                 template="plotly_white",
-                color_discrete_sequence=px.colors.qualitative.Set3
+                color_discrete_sequence=px.colors.qualitative.Vivid
             )
             fig_pie.update_traces(textposition="inside", textinfo="percent+label")
             st.plotly_chart(fig_pie, use_container_width=True)
@@ -375,7 +385,7 @@ if df is not None:
                 labels={"Total_Venta": "Ventas ($)", "Producto": ""},
                 template="plotly_white",
                 color="Total_Venta",
-                color_continuous_scale="Blues"
+                color_continuous_scale=["#e0e7ff", COLOR_PRIMARIO]
             )
             fig_bar_prod.update_layout(yaxis_categoryorder="total ascending")
             st.plotly_chart(fig_bar_prod, use_container_width=True)
@@ -396,7 +406,7 @@ if df is not None:
                 labels={"Total_Venta": "Ventas ($)", "Vendedor": ""},
                 template="plotly_white",
                 color="Vendedor",
-                color_discrete_sequence=px.colors.qualitative.Pastel
+                color_discrete_sequence=px.colors.qualitative.Bold
             )
             fig_bar_vend.update_layout(xaxis_tickangle=-45)
             st.plotly_chart(fig_bar_vend, use_container_width=True)
